@@ -1,6 +1,16 @@
 [
   
     {
+      "title"    : "Checkmate in three",
+      "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/checkmate-in-three'>Checkmate in three<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2018-02-27T00:00:00+01:00'>27 February 2018</time> – <span class='article__minutes'>1 min read</span> </div><p class='article__excerpt'>Can you tell, how? Puzzle.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/chess' class='article__tag'>chess</a><a href='/tag/learn' class='article__tag'>learn</a><a href='/tag/fun' class='article__tag'>fun</a></div></div></div></div></div>",
+      "category" : "",
+      "tags"     : "chess, learn, and fun",
+      "url"      : "/checkmate-in-three",
+      "date"     : "2018-02-27 00:00:00 +0100",
+      "content"  : "Usually these kind of puzzles are extremely easy, and I don’t say this one is not, but needs one more brainsstep to solve. Can you do that in 3 min? Solution is under the picture.Solution: KH3, Ph4, QF7, ..., mate on QG8, QH7 or NF7."
+    } ,
+  
+    {
       "title"    : "Cryptography on Stanford",
       "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/cryptography-course-stanford'>Cryptography on Stanford<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2016-01-10T00:00:00+01:00'>10 January 2016</time> – <span class='article__minutes'>2min read</span> </div><p class='article__excerpt'>Completed it online on Coursera, and now I summarize the experience.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/learn' class='article__tag'>learn</a><a href='/tag/security' class='article__tag'>security</a></div></div></div></div></div>",
       "category" : "",
@@ -78,6 +88,16 @@
       "url"      : "/we-have-seen-your-code",
       "date"     : "2010-06-06 00:00:00 +0200",
       "content"  : "I’ve just received a very kind email:… I am a Developer Relations Engineer at […], we are working on improving developer recruitment. We have analyzed your open source contributions on Github and we think that you could be a good fit for the position as Software Engineer at […], in Barcelona…Very few codes are uploaded to my Github, basically university homeworks and other scripts I had to complete for random purposes. As you all know, if you talk about homeworks, quality is not the first word, which comes up in your mind. I do not understand how this can be enough for any serious company, so I had to say a gentle no for this opportunity. Fun to think about it."
+    } ,
+  
+    {
+      "title"    : "Newest scam with prepaid phone cards",
+      "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/newest-scam'>Newest scam with prepaid phone cards<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2007-11-30T00:00:00+01:00'>30 November 2007</time> – <span class='article__minutes'>1 min read</span> </div><p class='article__excerpt'>Story with a pinch of nonsense.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/fun' class='article__tag'>fun</a><a href='/tag/security' class='article__tag'>security</a><a href='/tag/life' class='article__tag'>life</a></div></div></div></div></div>",
+      "category" : "",
+      "tags"     : "fun, security, and life",
+      "url"      : "/newest-scam",
+      "date"     : "2007-11-30 00:00:00 +0100",
+      "content"  : "“Social engineering techniques have been popular almost since Graham invented the telephone” - i wrote, when i started to summarize my thoughts in this topic, but then I realized, that much earlier Devil fooled Eve by convincing him to eat an apple in Genesis, and even Steve Jobs his majesty couldn’t avoid this flick.Nowadays fraudsters do not want us to eat apple, but to jeopardize our money. In Hungary, the newest scam is about the following: you receive a phone call from unknown number about possible winning of 6 million HUF (roughly 20.000 EUR), if you read out a freshly bought prepaid phone card’s number over the phone. That mentioned plastic item costs maybe like 3.000 or 5.000 HUF, and even if I got cheated – thinks the victim – it’s not much compared to the opportunity to change my life (“bigger good” as John Stuart Mill would say) and push millions into my pocket.  It’s an obvious fraud from an external point of view, and you immediately recognize it, but when you are in, maybe it’s not that trivial.I believe, that options to earning money legally and planned, if you have none at the moment, is quite limited: you work hard, or you have an idea, and after you work hard. People tend to forget about St. Benedict’s regula’s most important teaching: ora et labora. We as humans usually do not pray and work, but pray (optionally), and hope to get lucky."
     } 
   
 ]

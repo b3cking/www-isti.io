@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://isti.hu//newest-scam</loc>
+<lastmod>2007-11-30T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>https://isti.hu//we-have-seen-your-code</loc>
 <lastmod>2010-06-06T00:00:00+02:00</lastmod>
 </url>
@@ -33,6 +37,10 @@
 <lastmod>2016-01-10T00:00:00+01:00</lastmod>
 </url>
 <url>
+<loc>https://isti.hu//checkmate-in-three</loc>
+<lastmod>2018-02-27T00:00:00+01:00</lastmod>
+</url>
+<url>
 <loc>https://isti.hu//about/</loc>
 </url>
 <url>
@@ -45,6 +53,12 @@
 <loc>https://isti.hu//tag/fun</loc>
 </url>
 <url>
+<loc>https://isti.hu//tag/security</loc>
+</url>
+<url>
+<loc>https://isti.hu//tag/life</loc>
+</url>
+<url>
 <loc>https://isti.hu//tag/recruit</loc>
 </url>
 <url>
@@ -54,13 +68,13 @@
 <loc>https://isti.hu//tag/technology</loc>
 </url>
 <url>
-<loc>https://isti.hu//tag/security</loc>
-</url>
-<url>
 <loc>https://isti.hu//tag/code</loc>
 </url>
 <url>
 <loc>https://isti.hu//tag/learn</loc>
+</url>
+<url>
+<loc>https://isti.hu//tag/chess</loc>
 </url>
 <url>
 <loc>https://isti.hu//page/2/</loc>
