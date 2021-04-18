@@ -2,7 +2,7 @@
   
     {
       "title"    : "The vaccination experience",
-      "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/the-vaccination-experience'>The vaccination experience<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2021-04-18T00:00:00+02:00'>18 April 2021</time> – <span class='article__minutes'>4min read</span> </div><p class='article__excerpt'>Two days ago I got vaccinated in Hungary, summarizing my experience hereby.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/life' class='article__tag'>life</a><a href='/tag/vaccine' class='article__tag'>vaccine</a></div></div></div></div></div>",
+      "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/the-vaccination-experience'>The vaccination experience<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2021-04-18T00:00:00+02:00'>18 April 2021</time> – <span class='article__minutes'>4min read</span> </div><p class='article__excerpt'>I got vaccinated in Hungary, summarizing my experience hereby.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/life' class='article__tag'>life</a><a href='/tag/vaccine' class='article__tag'>vaccine</a></div></div></div></div></div>",
       "category" : "",
       "tags"     : "life and vaccine",
       "url"      : "/the-vaccination-experience",
