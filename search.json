@@ -22,7 +22,7 @@
   
     {
       "title"    : "Cryptography on Stanford",
-      "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/cryptography-course-stanford'>Cryptography on Stanford<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2016-01-10T00:00:00+01:00'>10 January 2016</time> – <span class='article__minutes'>2min read</span> </div><p class='article__excerpt'>Completed it online on Coursera, and now I summarize the experience.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/learn' class='article__tag'>learn</a><a href='/tag/security' class='article__tag'>security</a></div></div></div></div></div>",
+      "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/cryptography-course-stanford'>Cryptography on Stanford<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2016-01-10T00:00:00+01:00'>10 January 2016</time> – <span class='article__minutes'>2min read</span> </div><p class='article__excerpt'>Completed it online on Coursera, and now I summarize my experience.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/learn' class='article__tag'>learn</a><a href='/tag/security' class='article__tag'>security</a></div></div></div></div></div>",
       "category" : "",
       "tags"     : "learn and security",
       "url"      : "/cryptography-course-stanford",
