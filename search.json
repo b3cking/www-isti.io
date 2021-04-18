@@ -77,7 +77,7 @@
       "tags"     : "technology and security",
       "url"      : "/public-domain-resolves-to-127-0-0-1",
       "date"     : "2012-05-28 00:00:00 +0200",
-      "content"  : "Scott Forsyth bought a domain name for us – i mean all of us. *.localhost.me can be used for accessing your private, local computer, so when you ping, or nslookup this address, you will get 127.0.0.1 back. As Scottie says, he can’t track usage since the domain name resolves to 127.0.0.1 and never passes through his servers obviously.If you do any testing on your local system you’ve probably created hosts file entries (“/etc/hosts/”) for different testing domains and had them point back to 127.0.0.1.  This works great but it requires just a bit of extra effort.Be warned, use it only at your own risk! Due to dns design choices, propagation latencies, etc. you can be tricked into a phishing or OTA attacks."
+      "content"  : "Not working anymoreScott Forsyth bought a domain name for us – i mean all of us. *.localhost.me can be used for accessing your private, local computer, so when you ping, or nslookup this address, you will get 127.0.0.1 back. As Scottie says, he can’t track usage since the domain name resolves to 127.0.0.1 and never passes through his servers obviously.If you do any testing on your local system you’ve probably created hosts file entries (“/etc/hosts/”) for different testing domains and had them point back to 127.0.0.1.  This works great but it requires just a bit of extra effort.Be warned, use it only at your own risk! Due to dns design choices, propagation latencies, etc. you can be tricked into a phishing or OTA attacks."
     } ,
   
     {
