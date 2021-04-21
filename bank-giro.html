@@ -6,22 +6,22 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Page not found</title>
-  <meta name='description' content='isti.io'>
+  <title>GIRO account numbers and related error detection</title>
+  <meta name='description' content='How does it work? Is it possible to transfer money, where we don't want to, bcause of a mistake or typo?'>
 
-  <link rel="canonical" href="https://isti.hu//404.html">
+  <link rel="canonical" href="https://isti.hu//bank-giro">
   <link rel="alternate" type="application/rss+xml" title="Istvan Kis" href="/feed.xml">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Page not found – Istvan Kis">
-  <meta name="twitter:description" content="">
-  <meta name="twitter:image:src" content="https://isti.hu//images/about-1.jpg">
+  <meta name="twitter:title" content="GIRO account numbers and related error detection – Istvan Kis">
+  <meta name="twitter:description" content="How does it work? Is it possible to transfer money, where we don't want to, bcause of a mistake or typo?">
+  <meta name="twitter:image:src" content="https://isti.hu//images/2009/money.jpg">
 
   <!-- Facebook OpenGraph -->
-  <meta property="og:title" content="Page not found – Istvan Kis" />
-  <meta property="og:description" content="" />
-  <meta property="og:image" content="https://isti.hu//images/about-1.jpg" />
+  <meta property="og:title" content="GIRO account numbers and related error detection – Istvan Kis" />
+  <meta property="og:description" content="How does it work? Is it possible to transfer money, where we don't want to, bcause of a mistake or typo?" />
+  <meta property="og:image" content="https://isti.hu//images/2009/money.jpg" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap" rel="stylesheet">
@@ -234,40 +234,131 @@
 <div class="container">
   <div class="row">
     <div class="col col-12">
-      <div class="page-image">
-        <img src="/images/about-1.jpg" alt="Page not found">
+      <div class="post-image">
+        <img src="/images/2009/money.jpg" alt="GIRO account numbers and related error detection">
       </div>
     </div>
   </div>
 </div>
 
 
-<!-- begin page -->
+<!-- begin post -->
 <div class="container animate">
 
-  <div class="page__info">
-    <h1 class="page__title">Page not found</h1>
+  <div class="post__info">
+    <h1 class="post__title">GIRO account numbers and related error detection</h1>
+    <div class="post__meta">
+      <time class="post__date" datetime="2009-09-08T00:00:00+02:00">08 September 2009</time> – <span class="post__minutes">  2 min read 
+      </span>
+    </div>
   </div>
 
-  <article class="page">
-    <div class="page__content">
-      <div class="container">
-  <div class="row">
-    <div class="col col-12">
-      <div class="error">
-        <h2 class="error__title">404</h2>
-        <p class="error__text">I really tried to find, but it's not even in the garden.</p>
-        <a class="button" href="/">Back to homepage</a>
+  <article class="post">
+
+    <div class="post__content">
+      <p>Since I started working in CIB, some of my friends asked me about <a href="https://en.wikipedia.org/wiki/Giro">Giro</a> account number systems: can we fill account numbers incorrectly in internetbank, is it possible to transfer money, where we don’t want to, because of a typo? Short answer is no, or very unlikely. But why?</p>
+
+<h1 id="giro-account-numbers-format">GIRO account numbers format</h1>
+
+<p>Start from a quick and not so accurate definition: card numbers are what are printed on debit or credit cards, while account numbers identify banking accounts. These two connect in banking systems, when card gets assigned to particular account. This can be changed very easily, but traditional banks are not offering such online services usually. Giro account numbers contain 2x8 or 3x8 numbers, and the 8-digits blocks are separated by hyphen (-). In Hungary most banks introduced the 24-digit format, but the biggest competitor (OTP) is a commited 16-digit user. Frankly, it doesn’t really matter, filling last 8 digits with zeros can transform type-16 to type-24.</p>
+
+<p>So the format is the following: <em>AAABBBBC – DDDDDDDE – FFFFFFFG</em>.</p>
+
+<h1 id="what-can-we-know-from-each-digits">What can we know from each digits?</h1>
+
+<p>Let’s check one by one, what numbers mean or how are generated.</p>
+
+<p><strong><em>AAA</em></strong>: Giro-code from 3 digits, in Hungary, MNB (Central Bank of Hungary) provides it and assigns to banks. (e.g. CIB – 107, OTP – 117, etc.) The actual list can be downloaded from <a href="https://mnb.hu/">MNB homepage</a>.</p>
+
+<p><strong><em>BBBB</em></strong>: Branch identifier of the bank.</p>
+
+<p><strong><em>C</em></strong>: A checksum generated from <em>AAABBBB</em>, the exact algorythm will be described later.</p>
+
+<p>The specification says that remaining 16 digits can be used for customer identification, but most banks do this with 9-16 digits, and last 8 numbers are used for sub-accounts, ot not used at all, as we saw previously. A common best-practice is:</p>
+
+<p><strong><em>DDDDDDD</em></strong> – Customer internal, bank-specific ID.</p>
+
+<p><strong><em>E</em></strong> – Generated checksum from <em>DDDDDDD</em>.</p>
+
+<p><strong><em>FFFFFFF</em></strong> – Sub-account ID.</p>
+
+<p><strong><em>G</em></strong> – Generated checksum from <em>FFFFFFF</em>.</p>
+
+<h1 id="error-detection">Error detection</h1>
+
+<p>Based on the previously mentioned 3 generated checksums, transfer services or basically anybody can check, if the account numbers you are trying to transfer money to, is valid or not <em>logically</em>. Obviously it doesn’t validate it’s real existence, but can avoid unwanted transactions.</p>
+
+<p><img src="/images/2009/error.jpg" alt="Error detected later" />
+<em>Photo by <a href="https://unsplash.com/photos/rXpzHHX22Ak">Anna Gru</a></em></p>
+
+<p>The error detection algorythm is the following:</p>
+
+<p>Multiply first 8 digits’…</p>
+<ul>
+  <li>first number by 9</li>
+  <li>second number by 7</li>
+  <li>third number by 3</li>
+  <li>fourth number by 1</li>
+  <li>fifth number by 9</li>
+  <li>sixth number by 7</li>
+  <li>seventh number by 3</li>
+  <li>eighth number by 1,</li>
+</ul>
+
+<p>and add these products. The summarized amount must be divisible by ten without remainder. If it’s not, the giro account number cannot be valid.</p>
+
+<p>As a consequence, most likely there won’t be mistaken transfers, as long as you don’t have multiple errors in the same account numbers. So no reason to worry, but always handle your finances with proper care.</p>
+
+    </div>
+
+    <div class="post__bottom">
+      
+      <div class="post__share">
+        <ul class="share__list list-reset">
+          <li class="share__item">
+            <a class="share__link share__twitter" href="https://twitter.com/intent/tweet?text=GIRO%20account%20numbers%20and%20related%20error%20detection&url=https://isti.hu//bank-giro"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on Twitter" rel="nofollow">Twitter</a>
+          </li>
+          <li class="share__item">
+            <a class="share__link share__facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://isti.hu//bank-giro"
+              onclick="window.open(this.href, 'pop-up', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;"
+              title="Share on Facebook" rel="nofollow">Facebook</a>
+          </li>
+        </ul>
+      </div>
+
+      
+      <div class="post__tags">
+        
+        <a href="/tag/work" class="post__tag">work</a>
+        
+        <a href="/tag/bank" class="post__tag">bank</a>
+        
+        <a href="/tag/technology" class="post__tag">technology</a>
+        
+      </div>
+      
+    </div>
+
+    <div class="post-author">
+      <a href="/about/" class="post-author__image" aria-label="Istvan Kis">
+        <img src="/images/isti-suit-up.jpg" alt="Istvan Kis">
+      </a>
+      <div class="post-author__info">
+        <h2 class="post-author__name"><a href="/about/">Istvan Kis</a></h2>
+        <p class="post-author__bio">Leading DevOps Engineering in CIB Bank, host of kultúr sufni podcast, runner, cyclist and booklover. Formerly worked as a web developer, frontend engineer and in system design technical and management roles.</p>
+        <div class="post-author__meta">
+          
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
-    </div>
+    
+
   </article>
-
 </div>
-<!-- end page -->
+<!-- end post -->
     </main>
     <!-- end content -->
 
