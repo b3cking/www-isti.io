@@ -11,6 +11,16 @@
     } ,
   
     {
+      "title"    : "Quick sports in the office",
+      "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/quick-sports-in-the-office'>Quick sports in the office<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2019-06-12T00:00:00+02:00'>12 June 2019</time> – <span class='article__minutes'>1 min read</span> </div><p class='article__excerpt'>Run from the basement to the top in the stairway. How fast are you?</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/fun' class='article__tag'>fun</a><a href='/tag/work' class='article__tag'>work</a><a href='/tag/sport' class='article__tag'>sport</a></div></div></div></div></div>",
+      "category" : "",
+      "tags"     : "fun, work, and sport",
+      "url"      : "/quick-sports-in-the-office",
+      "date"     : "2019-06-12 00:00:00 +0200",
+      "content"  : "With some developers we had an indoor sports idea: between different code assignments or meetings, why do we not run up from the basement to our (5th) floor in the office? It can be absolved without sweat, not as easy as it might seem, but can prevent bad influence of all-day sitting at the desk.Szabi is sprinting to the topDevs wouldn’t be devs, if a good race wasn’t established for this purpose. People are measuring their own time, there are some kind of race prerequisites and conditions (such as only the B staircase can be used due to size differences), but basically the whole thing is a big, friendly fun. My best time is 23,8 seconds for the mentioned 7 floors in suit (top was off), and even if it is good or bad, my pumping blood in my veins is a pretty good feeling, and afterwards all the thinking come must faster and effectively. (Occupational safety is not on the table now, so maybe this approach cannot be recommended by HR officially, but come on, take care and run!)"
+    } ,
+  
+    {
       "title"    : "Checkmate in three",
       "article"  : "<div class='article col col-12 animate'> <div class='article__inner'> <div class='article__content'> <h2 class='article__title'> <a href='/checkmate-in-three'>Checkmate in three<i class='ion ion-md-arrow-round-forward'></i></a> </h2> <div class='article__meta'> <time class='article__date' datetime='2018-02-27T00:00:00+01:00'>27 February 2018</time> – <span class='article__minutes'>1 min read</span> </div><p class='article__excerpt'>Can you tell, how? Puzzle.</p><div class='article__bottom'><div class='article-tags__box'><a href='/tag/chess' class='article__tag'>chess</a><a href='/tag/learn' class='article__tag'>learn</a><a href='/tag/fun' class='article__tag'>fun</a></div></div></div></div></div>",
       "category" : "",
