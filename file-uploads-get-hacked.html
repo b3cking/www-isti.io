@@ -295,8 +295,8 @@
 
 <h3 id="file-extension-filtering">File extension filtering</h3>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">extension</span> <span class="o">!=</span> <span class="dl">"</span><span class="s2">.jpg</span><span class="dl">"</span><span class="p">){</span>
-    <span class="nx">alert</span><span class="p">(</span><span class="dl">"</span><span class="s2">Not valid file extension.</span><span class="dl">"</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="nx">file</span><span class="p">.</span><span class="nx">extension</span> <span class="o">!=</span> <span class="dl">'</span><span class="s1">.jpg</span><span class="dl">'</span><span class="p">){</span>
+    <span class="nx">alert</span><span class="p">(</span><span class="dl">'</span><span class="s1">Not valid file extension.</span><span class="dl">'</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
@@ -308,7 +308,7 @@
 
 <h4 id="mime-type">Mime type</h4>
 
-<p>When a client uploads a file via http/s, the header always contain a “<code class="language-plaintext highlighter-rouge">Content-Type:</code> “ part, where the value is in type/subtype format, e.g. image/jpeg for a jpg picture. It is almost the same as file extension filtering, because mime types are based on extension of the file.</p>
+<p>When a client uploads a file via http/s, the header always contain a ‘<code class="language-plaintext highlighter-rouge">Content-Type:</code>’ part, where the value is in type/subtype format, e.g. image/jpeg for a jpg picture. It is almost the same as file extension filtering, because mime types are based on extension of the file.</p>
 
 <h4 id="magic-number">Magic number</h4>
 
@@ -395,7 +395,7 @@
 
 <p><img src="/images/2022/input-validation-15.png" alt="Command call from admin interface" /></p>
 
-<p>We see that the param is a direct POST parameter. Now start a <code class="language-plaintext highlighter-rouge">netcat</code> listener on the previously configured IP and port (10.9.125.225:1234 in my case). If it runs, we should call that “jpg” from the modules directory with relative path. We are pretty sure that the OS is a Linux or other NIX-based system, because it answers ICMP pings and nmap base scans. (Microsoft firewall drops every ICMP request by default.)</p>
+<p>We see that the param is a direct POST parameter. Now start a <code class="language-plaintext highlighter-rouge">netcat</code> listener on the previously configured IP and port (10.9.125.225:1234 in my case). If it runs, we should call that ‘jpg’ from the modules directory with relative path. We are pretty sure that the OS is a Linux or other NIX-based system, because it answers ICMP pings and nmap base scans. (Microsoft firewall drops every ICMP request by default.)</p>
 
 <p><img src="/images/2022/input-validation-16.png" alt="Root access to the server" /></p>
 
