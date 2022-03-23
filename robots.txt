@@ -1,1 +1,1 @@
-Sitemap: https://isti.hu//sitemap.xml
+Sitemap: https://isti.hu/sitemap.xml
