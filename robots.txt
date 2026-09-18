@@ -1,1 +1,1 @@
-Sitemap: https://istvankis.com/sitemap.xml
+Sitemap: https://tech.istvankis.com/sitemap.xml
